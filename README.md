@@ -2,7 +2,9 @@
 
 [Helm](https://helm.sh) plugin for using [Tiller](https://docs.helm.sh/using_helm/#installing-tiller) locally and in your CI/CD pipelines.
 
-**Note:** For a better security Tiller plugin comes with preset storage as `Secret`.
+~~**Note:** For a better security Tiller plugin comes with preset storage as `Secret`.~~
+
+*^ NOTE: Removed in this fork, since it's unnecessary when not using K8S secrets*
 
 ## Installation
 
@@ -99,4 +101,3 @@ To build patched `MacOS` and `Linux` `tiller` binaries and then publish them to 
 ```shell
 $ TILLER_VERSION=2.9.1 GCS_BUCKET=my_bucket make build-patch
 ```
-
